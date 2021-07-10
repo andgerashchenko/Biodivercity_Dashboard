@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head class="white">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body style="background-color: rgb(176, 202, 223);">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1 style="color:rgb(238, 237, 211);">Belly Button Biodiversity Dashboard</h1>
+        <p style=color:antiquewhite>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row" >
+      <div class="col-md-2" style="background-color: rgb(176, 202, 223);">
+        <div class="well" >
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select> 
+        </div>
+        <div class="panel panel-primary" style="background-color: rgb(176, 202, 223);">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>      
+      </div>
+      <div class="col-md-5">
+        <div id="bar-plot"></div>
+        <p style="font-size:20px">The bar chart above shows top 10 bacyerial cultures found in participant's belly button. Y-axis points to bacteria id number and X-axis its population. By hovering above the bars, bacteria names appears.</p>
+        </div>
+      <div class="col-md-4">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10">
+        <div id="bubble"></div>
+        
+        
+      </div>
+      <div class="col-md-2" >
+        <p style="font-size:20px">That bubble chart gives an idea of diversity and population of bacteria species found in belly button.  </p>
+      </div>  
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/js/charts.js"></script>
+
+</body>
+
+</html>
