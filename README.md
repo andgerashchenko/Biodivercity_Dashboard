@@ -11,5 +11,6 @@ The interactive dashboard - https://andgerashchenko.github.io/Biodivercity_Dashb
 
 ## Summary
 The interactive and customized dashboard has a dropdown menu to filter test subjects. There are three charts to visualize test subjects demographic information and what bacterial cultures live in their navel. Hovering over the charts will also reveal more detailed information.
-![Dashboard](https://user-images.githubusercontent.com/79814533/143786612-337c3b2b-944c-4c9a-b383-708984fcdaac.png)
+![Dashboard](https://user-images.githubusercontent.com/79814533/143786771-377ab6e2-fa34-4c5e-a74a-0f6ba2fde454.png)
+
 
